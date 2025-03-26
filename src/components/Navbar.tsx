@@ -45,12 +45,16 @@ const Navbar = () => {
           </nav>
           
           <div className="hidden md:block">
-            <Button variant="outline" className="mr-3 px-4 transition-all border-primary/20 text-primary hover:bg-primary/5 hover:text-primary hover:border-primary/30">
-              Contact
-            </Button>
-            <Button className="bg-primary hover:bg-primary/90 text-white shadow-sm hover:shadow-md transition-all duration-300">
-              Get Started
-            </Button>
+            <Link to="/contact">
+              <Button variant="outline" className="mr-3 px-4 transition-all border-primary/20 text-primary hover:bg-primary/5 hover:text-primary hover:border-primary/30">
+                Contact
+              </Button>
+            </Link>
+            <Link to="/get-started">
+              <Button className="bg-primary hover:bg-primary/90 text-white shadow-sm hover:shadow-md transition-all duration-300">
+                Get Started
+              </Button>
+            </Link>
           </div>
           
           <div className="md:hidden">
@@ -87,12 +91,16 @@ const Navbar = () => {
             </Link>
           </nav>
           <div className="py-6 px-4 space-y-3">
-            <Button variant="outline" className="w-full border-primary/20 text-primary hover:bg-primary/5">
-              Contact
-            </Button>
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white">
-              Get Started
-            </Button>
+            <Link to="/contact">
+              <Button variant="outline" className="w-full border-primary/20 text-primary hover:bg-primary/5">
+                Contact
+              </Button>
+            </Link>
+            <Link to="/get-started">
+              <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+                Get Started
+              </Button>
+            </Link>
           </div>
         </div>
       )}
